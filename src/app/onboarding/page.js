@@ -3,7 +3,7 @@ import React from "react";
 import OnboardingTemplate from "../components/templates/Onboarding";
 import { useRouter } from "next/navigation";
 const stripe = require("stripe")(
-
+  process.env.NEXT_PUBLIC_STRIPE_TEST_SK
 );
 export default async function OnboardingPage() {
 
