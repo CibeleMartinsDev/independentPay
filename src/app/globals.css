@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'NB International Regular';
+    font-weight: normal;
+    src: url('../../public//fonts/NB\ International\ Regular\ Webfont.otf');
+    font-display: swap;
+}
+  
+@font-face {
+    font-family: 'AvenirNextLTPro-Regular';
+    src: url('../../public/fonts/AvenirNextLTPro-Regular.otf');
+    font-display: swap;
+}
+  
+body {
+    background-color:#2C723F;
+}
