@@ -1,7 +1,9 @@
+'use-client'
 import React from "react";
 import { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/header/Header";
+import Header from "./components/atoms/header/Header";
+import AppTemplate from "./components/templates/App";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -15,9 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black">
-        <Header />
-        <main>{children}</main>
+      <body>
+        <AppTemplate children={children}/>
       </body>
     </html>
   );
